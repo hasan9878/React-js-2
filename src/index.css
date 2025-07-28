@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@theme {
+  --font-display: "Onest", "sans-serif";
+ --color-bg: #E4E4E7;  /* layoutbg-color */
+  --color-navactive:#09090B ; /* navbar active */     
+    --color-nav: #71717A;/* navbar */
+    --color-button: #F26922; /* Button  */
+    --color-input: #FAFAFA; /* input field */
+    --color-whit: #FFFFFF;
+    --color-hr:#3F3F46;
+    --color-ticket:#F4F4F5;
+  /* ... */
+}
+
+
+.active{
+    color: var(--color-navactive);
+    font-weight: bold; 
+    text-decoration: underline;   
+    text-underline-offset:10px; /* underline নিচে নামবে */
+    text-decoration-thickness: 3px; /* আন্ডারলাইন মোটা হবে */
+}
