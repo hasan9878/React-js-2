@@ -6,6 +6,8 @@ import HeroLayout from './Components/Herolayout'
 import Hero from './Components/Hero'
 import Dashbord from './Components/Dashbord'  
 import Incidents from './Components/Incidents'
+import Incidehero from './Components/Incidehero'
+import IncidentsStep2 from './Components/IncidentsStep2'
 
 
 
@@ -20,10 +22,12 @@ function App() {
         <Route path="" element={<HeroLayout />}>
         <Route path="/" element={<Dashbord />} />
         <Route path="/Incidents" element={<Incidents />} />
-        
+
           
         </Route>
-
+       
+       <Route path="Incidents/Incidentsstep2" element={<IncidentsStep2 />} />
+        <Route path="/Incidehero" element={<Incidehero />} />
 
       </Routes>
       
