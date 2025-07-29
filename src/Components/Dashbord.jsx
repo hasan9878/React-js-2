@@ -64,7 +64,51 @@ function Dashbord() {
       </div>
     </div>
 
+    
+
+{/* Chat button */}
+        <button
+          className="fixed right-8 bottom-8 bg-orange-500 text-white px-5 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-orange-600 transition"
+          onClick={() => setShowChat(true)}
+        >
+          <span>Chat</span>
+          <i className="fas fa-comment"></i>
+        </button>
       
+
+      {/* Chat box */}
+      {showChat && (
+        <div className="fixed right-8 bottom-24 w-80 bg-white rounded-lg shadow-xl p-4 z-50 flex flex-col">
+          <div className="flex items-center justify-between mb-2">
+            <span className="font-bold text-lg">Support Chat</span>
+            <button onClick={() => setShowChat(false)}>
+              <i className="fas fa-times text-gray-500"></i>
+            </button>
+          </div>
+          <div className="flex-1 overflow-y-auto mb-2">
+            {/* Chat messages */}
+            <div className="text-gray-500 text-sm mb-2">Hi! How can we help you?</div>
+            {/* ...more messages */}
+          </div>
+          <div className="flex items-center gap-2">
+            <button className="text-gray-400 hover:text-orange-500">
+              <i className="fas fa-paperclip"></i>
+            </button>
+            <button className="text-gray-400 hover:text-orange-500">
+              <i className="fas fa-image"></i>
+            </button>
+            <input
+              type="text"
+              className="flex-1 border rounded px-2 py-1 focus:outline-none"
+              placeholder="Type your message..."
+            />
+            <button className="bg-orange-500 text-white px-3 py-1 rounded hover:bg-orange-600">
+              <i className="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      )}
+    
     
     </>
     
