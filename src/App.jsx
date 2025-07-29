@@ -8,6 +8,7 @@ import Dashbord from './Components/Dashbord'
 import Incidents from './Components/Incidents'
 import Incidehero from './Components/Incidehero'
 import IncidentsStep2 from './Components/IncidentsStep2'
+import HeroIncide from './Components/HeroIncide'
 
 
 
@@ -28,6 +29,7 @@ function App() {
        
        <Route path="Incidents/Incidentsstep2" element={<IncidentsStep2 />} />
         <Route path="/Incidehero" element={<Incidehero />} />
+        <Route path="/HeroIncide" element={<HeroIncide />} />
 
       </Routes>
       
