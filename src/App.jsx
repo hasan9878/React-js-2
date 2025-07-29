@@ -11,6 +11,7 @@ import IncidentsStep2 from './Components/IncidentsStep2'
 import HeroIncide from './Components/HeroIncide'
 import IncidentsStep4 from './Components/IncidentsStep4'  
 import IncidentsStep5 from './Components/IncidentsStep5'
+import Location from './Components/Location'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="" element={<HeroLayout />}>
         <Route path="/" element={<Dashbord />} />
         <Route path="/Incidents" element={<Incidents />} />
+        <Route path='Location' element={<Location/>} />
 
           
         </Route>
