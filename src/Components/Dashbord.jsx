@@ -53,7 +53,7 @@ function Dashbord() {
 
   return (
     <>  
-     <Hero title="Welcome back" subtitle="Dashboard" buttontext="chyper Ai"/>
+     <Hero title="Welcome back" subtitle="Dashboard" buttontext="chyper Ai" buttonLink="ChyperAi"/>
       
 
        <div className="p-20 min-h-screen mb-56">
