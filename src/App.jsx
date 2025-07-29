@@ -10,6 +10,7 @@ import Incidehero from './Components/Incidehero'
 import IncidentsStep2 from './Components/IncidentsStep2'
 import HeroIncide from './Components/HeroIncide'
 import IncidentsStep4 from './Components/IncidentsStep4'  
+import IncidentsStep5 from './Components/IncidentsStep5'
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/Incidehero" element={<Incidehero />} />
         <Route path="/HeroIncide" element={<HeroIncide />} />
         <Route path="/IncidentsStep4" element={<IncidentsStep4 />} />
+        <Route path='/IncidentsStep5' element={<IncidentsStep5 />} />
 
       </Routes>
       
