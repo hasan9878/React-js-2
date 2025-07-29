@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route, } from 'react-router-dom'
 
 import './App.css'
 import HeroLayout from './Components/Herolayout'
+import Hero from './Components/Hero'
+import Dashbord from './Components/Dashbord'  
+
 
 
 function App() {
@@ -14,8 +17,11 @@ function App() {
       <Routes>
 
         <Route path="" element={<HeroLayout />}>
+        <Route path="/" element={<Dashbord />} />
           
         </Route>
+
+
       </Routes>
       
       </BrowserRouter>
